@@ -1,0 +1,23 @@
+import seaborn as sn
+import pandas as pd
+import matplotlib.pyplot as plt
+from google.colab import files
+array =  [[.51, .09, .10, .04, .12, .02, .11 ], 
+       [.02, .63, .01, .00, .01, .02, .00], 
+       [.09, .03, .52, .01, .12, .13, .08],
+       [.06, .00, .04, .83, .05, .05, .07],
+       [.10, .00, .15, .04, .55, .02, .13],
+       [.02, .01, .05, .02, .03, .77, .04],
+      [.07, .01, .11, .06, .15, .02, .58]]
+df_cm = pd.DataFrame(array, index = ["angry", "disgusted", "fearful","happy","sad","surprised","neutral"],
+              columns = ["angry", "disgusted", "fearful","happy","sad","surprised","neutral"],)
+
+plt.figure(figsize = (11,8))
+sn.heatmap(df_cm, annot=True, cmap="YlGnBu", linewidths=0.5)
+plt.title("Confusion Matrix")
+#plt.tight_layout()
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+
+plt.savefig("Fid.png", bbox_inches='tight')
+files.download("Fid.png")
