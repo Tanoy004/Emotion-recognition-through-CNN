@@ -1,4 +1,4 @@
-Country,Year,Status,Life expectancy ,Adult Mortality,infant deaths,Alcohol,Hepatitis B, BMI ,Polio,Total expenditure,Diphtheria , HIV,Human Development Groups,Population,Income composition of resources,Schooling
+Country,Year,Status,Life expectancy,Adult Mortality,infant deaths,Alcohol,Hepatitis B,BMI,Polio,Total expenditure,Diphtheria,HIV,Human Development Groups,Population,Income composition of resources,Schooling
 Afghanistan,2015,Developing,65,263,62,0.01,65,19.1,6,8.16,65,0.1,Low,33736494,0.479,10.1
 Bhutan,2014,Developing,60,271,64,0.01,62,18.6,58,8.18,62,0.1,Medium,327582,0.476,10
 Afghanistan,2013,Developing,60,268,66,0.01,64,18.1,62,8.13,64,0.1,High,31731688,0.47,9.9
